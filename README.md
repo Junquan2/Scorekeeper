@@ -3,4 +3,4 @@ A basketball scorekeeper app for Android
 
 ### Scorekeeping by button-tapping
 
-![UI](/resources/img1.png | width="100")
+<img src="resources/img2" width="40%">
