@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:theme="@style/PrimaryButton"
+        android:background="@drawable/home" />
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:background="#FF8800"
+        android:layout_height="120dp"
+        android:gravity="center"
+        >
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        />
+    </LinearLayout>
+
+        <ListView
+            android:layout_below="@+id/title"
+            android:id="@+id/mobile_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+        >
+        </ListView>
+</RelativeLayout>

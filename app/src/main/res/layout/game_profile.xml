@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp">
+
+    <!-- This layout file contains a partial solution for the pre-lecture assignment.
+     You should only add alignment constraints to the components below.
+     Do not modify the template code or add code other than the constraints.
+     -->
+    <TextView
+        android:id="@+id/profile"
+        android:text="Game Profile"
+        android:textSize="24sp"
+        android:layout_marginBottom="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:text="Game Date"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile"
+
+        />
+
+
+    <EditText
+        android:id="@+id/dateEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/date"
+        android:layout_toRightOf="@id/date"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="-10dp"
+        android:ems="10"
+        android:hint="Enter Date" />
+
+
+    <TextView
+        android:id="@+id/homeTeam"
+        android:text="My Team"
+        android:textSize="20sp"
+        android:layout_below="@id/date"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/homeTeamName"
+        android:text="Team Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/homeTeam"
+        android:layout_alignLeft="@id/date"
+
+        />
+
+    <EditText
+        android:id="@+id/homeTeamNameEntry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_below="@id/homeTeam"
+        android:layout_toRightOf="@id/homeTeamName"
+        android:layout_alignBottom="@id/homeTeamName"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/dateEntry"
+        android:hint="Enter Team Name"
+        />
+
+    <TextView
+        android:id="@+id/homeTeamScore"
+        android:text="Total Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/homeTeamName"
+        android:layout_alignLeft="@id/homeTeamName"
+
+        />
+
+    <EditText
+        android:id="@+id/homeTeamScoreEntry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_below="@id/homeTeamName"
+        android:layout_toRightOf="@id/homeTeamScore"
+        android:layout_alignBottom="@id/homeTeamScore"
+        android:layout_alignParentRight="true"
+        android:inputType="number"
+        android:hint="Enter Total Score"
+        />
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/homeTeamCk1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="Home team"-->
+        <!--android:checked="false"-->
+        <!--android:layout_below="@id/homeTeamScore"-->
+        <!--android:layout_alignLeft="@id/homeTeamScoreEntry"-->
+        <!--/>-->
+
+    <TextView
+        android:id="@+id/visitorTeam"
+        android:text="Opponent Team"
+        android:textSize="20sp"
+        android:layout_below="@id/homeTeamScoreEntry"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/visitorTeamName"
+        android:text="Team Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/visitorTeam"
+        android:layout_alignLeft="@id/date"
+
+        />
+
+    <EditText
+        android:id="@+id/visitorTeamNameEntry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/visitorTeam"
+        android:layout_toRightOf="@id/visitorTeamName"
+        android:layout_alignBottom="@id/visitorTeamName"
+        android:layout_alignLeft="@id/dateEntry"
+        android:layout_alignParentRight="true"
+        android:hint="Enter Team Name"
+        />
+
+    <TextView
+        android:id="@+id/visitorTeamScore"
+        android:text="Total Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/visitorTeamName"
+        android:layout_alignLeft="@id/visitorTeamName"
+
+        />
+
+    <EditText
+        android:id="@+id/visitorTeamScoreEntry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_below="@id/visitorTeamName"
+        android:layout_toRightOf="@id/visitorTeamScore"
+        android:layout_alignBottom="@id/visitorTeamScore"
+        android:layout_alignLeft="@id/dateEntry"
+        android:layout_alignParentRight="true"
+        android:inputType="number"
+        android:hint="Enter Total Score"
+        />
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/homeTeamCk2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Home team"-->
+        <!--android:checked="false"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_below="@id/visitorTeamScore"-->
+        <!--android:layout_alignLeft="@id/visitorTeamScoreEntry"-->
+        <!--/>-->
+
+    <Button
+        android:id="@+id/save"
+        android:text="Save"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/visitorTeamScoreEntry"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:background="#ff8800"
+        />
+
+
+</RelativeLayout>
